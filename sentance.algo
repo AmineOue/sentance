@@ -1,0 +1,24 @@
+ALGORITHM sentance
+VAR
+    str:STRING
+    i:INTEGER:=0
+    NB_C,NB_V:INTEGER:=0
+    NB_W:INTEGER:=1
+BEGIN
+    Write("enter a sentance")
+    read(str)
+    WHILE(str(i)<>".") DO 
+    NB_C = NB_C +1
+        if(str(i) = " ") THEN 
+        NB_W = NB_W +1
+        END_IF
+        if(str(i)=("a","e","i","u","o")) THEN 
+        NB_V = NB_V + 1
+        END_IF
+        i++
+    END_WHILE
+    Write(NB_C)
+    Write(NB_V)
+    Write(NB_W)
+
+END
